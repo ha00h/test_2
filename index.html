@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>틱택토 게임</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="info-panel">
+        <h1>틱택토</h1>
+        <p class="subtitle">3x3 보드에서 번갈아가며 승부하세요.</p>
+        <div class="players" role="region" aria-label="플레이어 정보">
+          <article class="player-card active" data-player="X">
+            <div>
+              <h2>플레이어 X</h2>
+              <p class="marker">기호: X</p>
+            </div>
+            <p class="score">
+              승리 <span id="scoreX" aria-live="polite">0</span>
+            </p>
+          </article>
+          <article class="player-card" data-player="O">
+            <div>
+              <h2>플레이어 O</h2>
+              <p class="marker">기호: O</p>
+            </div>
+            <p class="score">
+              승리 <span id="scoreO" aria-live="polite">0</span>
+            </p>
+          </article>
+        </div>
+        <div class="status" role="status" aria-live="polite">
+          <p id="statusText">플레이어 X 차례입니다.</p>
+          <button id="resetButton" type="button">새 게임</button>
+        </div>
+      </section>
+      <section
+        class="board"
+        role="grid"
+        aria-label="틱택토 게임판"
+        aria-live="off"
+      >
+        <button class="cell" role="gridcell" data-index="0"></button>
+        <button class="cell" role="gridcell" data-index="1"></button>
+        <button class="cell" role="gridcell" data-index="2"></button>
+        <button class="cell" role="gridcell" data-index="3"></button>
+        <button class="cell" role="gridcell" data-index="4"></button>
+        <button class="cell" role="gridcell" data-index="5"></button>
+        <button class="cell" role="gridcell" data-index="6"></button>
+        <button class="cell" role="gridcell" data-index="7"></button>
+        <button class="cell" role="gridcell" data-index="8"></button>
+      </section>
+    </main>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
