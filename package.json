@@ -1,0 +1,37 @@
+{
+  "name": "tic-tac-toe-ui",
+  "version": "1.0.0",
+  "description": "Tic-Tac-Toe UI 컴포넌트 예제",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ha00h/test_2.git"
+  },
+  "keywords": [
+    "tic-tac-toe",
+    "react",
+    "vite"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ha00h/test_2/issues"
+  },
+  "homepage": "https://github.com/ha00h/test_2#readme",
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.0"
+  }
+}
